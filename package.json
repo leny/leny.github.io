@@ -12,5 +12,10 @@
     "type": "git",
     "url": "git://github.com/leny/leny.github.io.git"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.4.0"
+  }
 }
