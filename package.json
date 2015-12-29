@@ -1,0 +1,16 @@
+{
+  "name": "leny.github.io",
+  "description": "My resume.",
+  "version": "2016.1.1",
+  "private": true,
+  "homepage": "http://leny.me",
+  "author": {
+    "name": "leny",
+    "email": "info@flatland.be"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leny/leny.github.io.git"
+  },
+  "devDependencies": {}
+}
