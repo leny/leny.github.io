@@ -13,3 +13,94 @@
 // resets
 normalize()
 box-sizing-reset()
+
+// fonts
+font-face( "Source Sans Pro Light", "./fonts/source-sans/sourcesanspro-light-webfont" )
+SourceSansProLight = "Source Sans Pro Light", font-stack( "Helvetica" )
+
+// vars
+mainBackgroundColor = #af1f36
+headerTextColor = black
+textColor = white
+linkColor = tint( #33a, 25% )
+linkHoverColor = tint( #33a, 50% )
+ks-color-fallback-enabled = true
+
+// ----- commons
+
+:focus
+    outline 0
+
+// ----- base
+
+html
+    height 100%
+    background mainBackgroundColor
+    font normal 62.5%/1.5 SourceSansProLight
+    -webkit-font-smoothing antialiased
+    -webkit-text-size-adjust 100%
+
+body
+    position relative
+    width 100%
+    min-height 100%
+    padding 0
+
+// ----- header
+
+header
+    padding 2rem 1rem
+    background white
+    box-shadow 0 0 1rem rgba( black, .5 )
+    h1
+        margin 0 auto
+        font normal 5rem/1 SourceSansProLight
+        text-align center
+        &:before
+            content ""
+            display inline-block
+            size 5rem
+            line-height 5rem
+            background url( icons/icons.svg ) 0 .4rem no-repeat
+            background-size auto 4rem
+            vertical-align top
+
+// ----- content
+
+h2
+    display none
+
+section
+    width 90%
+    margin 0 auto
+    p
+        strong
+            display block
+            font normal 1.4rem/1.75 SourceSansProLight
+            color textColor
+
+        span
+            display block
+            font normal 1.3rem/1.75 SourceSansProLight
+            color textColor
+            a
+                color linkColor
+                text-decoration none
+                transition color .25s ease-in-out
+                &:hover
+                    color linkHoverColor
+
+    ul
+        margin 0 auto
+        padding 0
+        list-style none
+        li
+            border-bottom .1rem dotted rgba( textColor, .33 )
+            a
+                display block
+                font normal 2rem/2.5 SourceSansProLight
+                color textColor
+                text-decoration none
+                transition color .5s ease
+                &:hover
+                    color textColor
