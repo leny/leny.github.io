@@ -17,17 +17,46 @@ module.exports = function( grunt ) {
                 }
             }
         },
+        "stylus": {
+            "options": {
+                "compress": false,
+                "use": [
+                    require( "kouto-swiss" )
+                ]
+            },
+            "styles": {
+                "files": {
+                    "assets/styles.css": "src/stylus/styles.styl"
+                }
+            }
+        },
+        "csso": {
+            "options": {
+                "report": "gzip"
+            },
+            "styles": {
+                "files": {
+                    "assets/styles.min.css": "assets/styles.css"
+                }
+            }
+        },
         "watch": {
             "jade": {
                 "files": "src/jade/index.jade",
                 "tasks": [ "html" ]
+            },
+            "stylus": {
+                "files": "src/stylus/styles.styl",
+                "tasks": [ "css" ]
             }
         }
     } );
 
     grunt.registerTask( "html", [ "jade" ] );
 
-    grunt.registerTask( "default", [ "html" ] );
+    grunt.registerTask( "css", [ "stylus", "csso" ] );
+
+    grunt.registerTask( "default", [ "html", "css" ] );
 
     grunt.registerTask( "work", [ "default", "watch" ] );
 };
