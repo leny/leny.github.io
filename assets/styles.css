@@ -221,7 +221,7 @@ html {
 }
 html {
   height: 100%;
-  background: #7a9dad;
+  background: #3ed9d5;
   font: normal 62.5%/1.5 "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -271,22 +271,22 @@ section {
 section p strong {
   display: block;
   margin: 0 auto 0.6rem;
-  font: bold 1.8rem/1.75 "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 2rem/1.75 "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
 }
 section p span {
   display: block;
-  font: normal 1.6rem/1.75 "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 1.8rem/1.75 "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
 }
 section p span a {
-  color: #26267f;
+  color: #883ed9;
   text-decoration: none;
   -webkit-transition: color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out;
 }
 section p span a:hover {
-  color: #404e80;
+  color: #638bd7;
 }
 section ul {
   margin: 0 auto;
@@ -306,7 +306,7 @@ section ul li a {
   transition: color 0.5s ease;
 }
 section ul li a:hover {
-  color: #000;
+  color: #883ed9;
 }
 figure {
   display: none;
@@ -329,7 +329,7 @@ footer ul li {
 }
 footer ul li a {
   text-decoration: none;
-  color: #5b7581;
+  color: #2ea29f;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
@@ -362,7 +362,7 @@ footer ul li a[id="instagram"]:before {
   .holder {
     position: relative;
     width: 90%;
-    max-width: 76rem;
+    max-width: 82rem;
     margin: 0 auto;
     z-index: 50;
   }
@@ -413,7 +413,7 @@ footer ul li a[id="instagram"]:before {
     width: 100%;
   }
   footer {
-    max-width: 76rem;
+    max-width: 82rem;
     margin: 2.5rem auto 0;
   }
   footer ul {
@@ -428,7 +428,7 @@ footer ul li a[id="instagram"]:before {
     height: 9rem;
   }
   header h1 {
-    max-width: 76rem;
+    max-width: 82rem;
     margin: 0 auto;
     padding-left: 5.5rem;
     text-align: left;

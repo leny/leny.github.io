@@ -22,13 +22,12 @@ font-face( "Icomoon", "./fonts/icomoon/icomoon", formats: eot svg ttf woff )
 Glyphs = "Icomoon"
 
 // vars
-mainBackgroundColor = #26bebb
-
-mainBackgroundColor = #7a9dad
+// mainBackgroundColor = #26bebb
+mainBackgroundColor = #3ed9d5
 headerTextColor = black
 textColor = black
-linkColor = #33a
-linkHoverColor = mix( #33a, mainBackgroundColor )
+linkColor = quad( mainBackgroundColor )[ 0 ]
+linkHoverColor = mix( linkColor, mainBackgroundColor )
 ks-color-fallback-enabled = true
 
 :focus
