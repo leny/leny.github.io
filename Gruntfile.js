@@ -46,7 +46,7 @@ module.exports = function( grunt ) {
                 "tasks": [ "html" ]
             },
             "stylus": {
-                "files": "src/stylus/styles.styl",
+                "files": "src/stylus/**/*.styl",
                 "tasks": [ "css" ]
             }
         }
