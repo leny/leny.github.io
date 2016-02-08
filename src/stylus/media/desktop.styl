@@ -1,76 +1,76 @@
 @keyframes cutter {
     from {
-        left -5%
+        left: -5%
     }
     to {
-        left 105%
+        left: 105%
     }
 }
 
 @keyframes layer {
     from {
-        top 9.1rem
+        top: 9.1rem
     }
     to {
-        top 105%
+        top: 105%
     }
 }
 
 @keyframes photo {
     from {
-        top -35rem
-        transform rotate( 5deg ) translate3d( 0, 0, 0 )
+        top: -35rem
+        transform: rotate( 5deg ) translate3d( 0, 0, 0 )
     }
     to {
-        top -3rem
-        transform rotate( -5deg ) translate3d( 0, 0, 0 )
+        top: -3rem
+        transform: rotate( -5deg ) translate3d( 0, 0, 0 )
     }
 }
 
 +media-query( screen, min-width 60rem )
     body
-        overflow-x hidden
+        overflow-x: hidden
 
     header
-        height 9rem
+        height: 9rem
         h1
-            max-width 82rem
-            margin 0 auto
-            padding-left 5.5rem
-            text-align left
+            max-width: 82rem
+            margin: 0 auto
+            padding-left: 5.5rem
+            text-align: left
 
     figure
-        top -35rem
-        transform rotate( 5deg ) translate3d( 0, 0, 0 )
-        animation photo 1.75s easing( "out-expo" ) 4.25s forwards
+        top: -35rem
+        transform: rotate( 5deg ) translate3d( 0, 0, 0 )
+        animation: photo 1.75s easing( "out-expo" ) 4.25s forwards
 
     .layer
-        display block
-        fixed 9.1rem 0 0 0
-        z-index 150
-        background white
-        animation layer 1s cubic-bezier( 0.310, 0.440, 0.445, 1.650 ) 4s forwards
+        display: block
+        fixed: 9.1rem 0 0 0
+        z-index: 150
+        background: white
+        animation: layer 1s cubic-bezier( 0.310, 0.440, 0.445, 1.650 ) 4s forwards
 
     .cutter
-        display block
-        size 5rem
-        absolute 4.3rem auto auto -5%
-        z-index 120
-        background url( "icons/cutter.svg" ) left bottom no-repeat
-        background-size contain
-        animation cutter 3s easing( "out-sine" ) 1s forwards
+        display: block
+        size: 5rem
+        absolute: 4.3rem auto auto -5%
+        z-index: 120
+        background: url( "icons/cutter.svg" ) left bottom no-repeat
+        background-size: contain
+        animation: cutter 3s easing( "out-sine" ) 1s forwards
         &:after
-            content ""
-            size 2000rem .1rem
-            absolute auto auto .2rem 1.1rem
-            background white
+            content: ""
+            size: 2000rem .1rem
+            absolute: auto auto .2rem 1.1rem
+            background: white
 
 +media-query( screen, min-width 80.1rem )
     figure
-        animation photo 1.75s easing( "out-expo" ) 6.25s forwards
+        animation: photo 1.75s easing( "out-expo" ) 6.25s forwards
 
     .layer
-        animation layer 1s cubic-bezier( 0.310, 0.440, 0.445, 1.650 ) 6s forwards
+        animation: layer 1s cubic-bezier( 0.310, 0.440, 0.445, 1.650 ) 6s forwards
 
     .cutter
-        animation cutter 5s easing( "out-sine" ) 1s forwards
+        animation: cutter 5s easing( "out-sine" ) 1s forwards

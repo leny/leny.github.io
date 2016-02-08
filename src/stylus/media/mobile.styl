@@ -1,94 +1,94 @@
 header
-    margin 0 auto 2rem
-    padding 2rem 1rem
-    background white
-    box-shadow 0 0 1.5rem rgba( black, .75 )
+    margin: 0 auto 2rem
+    padding: 2rem 1rem
+    background: white
+    box-shadow: 0 0 1.5rem rgba( black, .75 )
     h1
-        margin 0 auto
-        font normal 5rem/1 SourceSansPro
-        text-align center
+        margin: 0 auto
+        font: normal 5rem/1 $SourceSansPro
+        text-align: center
         &:before
-            content ""
-            display inline-block
-            size 5rem
-            line-height 5rem
-            background url( "icons/icons.svg" ) 0 .4rem no-repeat
-            background-size auto 4rem
-            vertical-align top
+            content: ""
+            display: inline-block
+            size: 5rem
+            line-height: 5rem
+            background: url( "icons/icons.svg" ) 0 .4rem no-repeat
+            background-size: auto 4rem
+            vertical-align: top
 
 .cutter
 .layer
-    display none
+    display: none
 
 h2
-    display none
+    display: none
 
 section
-    width 90%
-    margin 0 auto
+    width: 90%
+    margin: 0 auto
     p
         strong
-            display block
-            margin 0 auto .6rem
-            font bold 2rem/1.75 SourceSansPro
-            color textColor
+            display: block
+            margin: 0 auto .6rem
+            font: bold 2rem/1.75 $SourceSansPro
+            color: $textColor
         span
-            display block
-            font normal 1.8rem/1.75 SourceSansPro
-            color textColor
+            display: block
+            font: normal 1.8rem/1.75 $SourceSansPro
+            color: $textColor
             a
-                color linkColor
-                text-decoration none
-                transition color .25s ease-in-out
+                color: $linkColor
+                text-decoration: none
+                transition: color .25s ease-in-out
                 &:hover
-                    color linkHoverColor
+                    color: $linkHoverColor
 
     ul
-        margin 0 auto
-        padding 0
-        list-style none
+        margin: 0 auto
+        padding: 0
+        list-style: none
         li
-            border-bottom .1rem dotted rgba( textColor, .33 )
+            border-bottom: .1rem dotted rgba( $textColor, .33 )
             a
-                display block
-                font normal 2.2rem/2.5 SourceSansPro
-                color textColor
-                text-decoration none
-                transition color .5s ease
+                display: block
+                font: normal 2.2rem/2.5 $SourceSansPro
+                color: $textColor
+                text-decoration: none
+                transition: color .5s ease
                 &:hover
-                    color linkColor
+                    color: $linkColor
 
 figure
-    display none
+    display: none
 
 footer
-    width 90%
-    margin 1.5rem auto 0
-    text-align center
+    width: 90%
+    margin: 1.5rem auto 0
+    text-align: center
     ul
-        display table
-        width 100%
-        margin 0 auto
-        padding 0
-        list-style none
+        display: table
+        width: 100%
+        margin: 0 auto
+        padding: 0
+        list-style: none
         li
-            display table-cell
-            text-align center
+            display: table-cell
+            text-align: center
             a
-                text-decoration none
-                color mix( textColor, mainBackgroundColor, 25% )
-                transition color .5s ease
+                text-decoration: none
+                color: mix( $textColor, $mainBackgroundColor, 25% )
+                transition: color .5s ease
                 span
-                    display none
+                    display: none
                 &:hover
-                    color textColor
+                    color: $textColor
                 &:before
-                    font normal 5rem Glyphs
+                    font: normal 5rem $Glyphs
                 &[id="twitter"]:before
-                    content ""
+                    content: ""
                 &[id="linkedin"]:before
-                    content ""
+                    content: ""
                 &[id="github"]:before
-                    content ""
+                    content: ""
                 &[id="instagram"]:before
-                    content ""
+                    content: ""
