@@ -1,7 +1,7 @@
 workflow "Build and deploy on push" {
   on = "push"
   resolves = [
-    "deploy: gh-pages"
+    "deploy: gh-pages",
   ]
 }
 
