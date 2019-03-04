@@ -15,6 +15,8 @@ export const ALT_COLOR = "royalblue";
 export const ALT_HOVER_COLOR = "mediumblue";
 export const BORDER_COLOR = "#eee";
 
+export const REDHEAD_COLOR = "#85463b";
+
 export const SOURCE_SANS_PRO_STACK = `"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif`;
 
 export const MQ_TABLET = "min-width: 640px";
