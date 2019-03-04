@@ -1,0 +1,38 @@
+{
+    "title": "Pierre-Antoine Delnatte, 33 ans, Webdeveloper.",
+    "description": "Développeur full-stack hyperactif, coach & formateur, maître du monde en dilettante, vieille à chats.",
+    "cards": {
+        "twitter": {
+            "card": "summary",
+            "title": "leny.me - Pierre-Antoine Delnatte, 33 ans, Webdeveloper.",
+            "description": "Développeur full-stack hyperactif, coach & formateur, maître du monde en dilettante, vieille à chats.",
+            "image": "https://leny.me/me.jpg",
+            "creator": "@leny_be"
+        },
+        "facebook": {
+            "type": "profile",
+            "title": "leny.me - Pierre-Antoine Delnatte, 33 ans, Webdeveloper.",
+            "site_name": "leny.me",
+            "description": "Développeur full-stack hyperactif, coach & formateur, maître du monde en dilettante, vieille à chats.",
+            "image": "https://leny.me/me.jpg",
+            "locale": "fr_BE"
+        }
+    },
+    "links": [
+        {"url": "//github.com/leny", "title": "GitHub", "icon": "fab_github-alt"},
+        {"url": "//medium.com/@leny_be", "title": "Medium", "icon": "fab_medium-m"},
+        {"url": "//twitter.com/leny_be", "title": "Twitter", "icon": "fab_twitter"},
+        {"url": "//www.npmjs.com/~leny", "title": "npm", "icon": "fab_npm"},
+        {
+            "url": "//be.linkedin.com/in/padelnatte",
+            "title": "linkedin",
+            "icon": "fab_linkedin"
+        },
+        {"url": "//dribbble.com/leny", "title": "Dribbble", "icon": "fab_dribbble"},
+        {
+            "url": "//instagram.com/lenymccormick",
+            "title": "Instagram",
+            "icon": "fab_instagram"
+        }
+    ]
+}
