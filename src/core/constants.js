@@ -18,6 +18,3 @@ export const BORDER_COLOR = "#eee";
 export const SOURCE_SANS_PRO_STACK = `"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif`;
 
 export const MQ_TABLET = "min-width: 640px";
-export const MQ_SMALL_DESKTOP = "min-width: 960px";
-export const MQ_MEDIUM_DESKTOP = "min-width: 1280px";
-export const MQ_LARGE_DESKTOP = "min-width: 1520px";
