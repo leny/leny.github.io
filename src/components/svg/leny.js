@@ -7,75 +7,50 @@
  */
 
 import React from "react";
-import {keyframes, css} from "@emotion/core";
-import {percent} from "koutla-swiss";
+import {css} from "@pwops/emotion-css";
+import {keyframes} from "@emotion/core";
+import {percent, scaleY, rotate, deg, s} from "@pwops/core";
 
 import {MAIN_COLOR, REDHEAD_COLOR} from "../../core/constants";
 
-const hairs = keyframes`
-    0% {
-        fill: ${MAIN_COLOR};
-    }
-    45% {
-        fill: ${MAIN_COLOR};
-    }
-    55% {
-        fill: ${REDHEAD_COLOR};
-    }
-    95% {
-        fill: ${REDHEAD_COLOR};
-    }
-    100% {
-        fill: ${MAIN_COLOR};
-    }
-`;
+const hairs = keyframes({
+    "0%": {fill: MAIN_COLOR},
+    [percent(45)]: {fill: MAIN_COLOR},
+    [percent(55)]: {fill: REDHEAD_COLOR},
+    [percent(95)]: {fill: REDHEAD_COLOR},
+    [percent(100)]: {fill: MAIN_COLOR},
+});
 
-const winkEye = keyframes`
-    0% {
-        transform: scaleY(1.0);
-    }
-    50% {
-        transform: scaleY(0.25);
-    }
-    85% {
-        transform: scaleY(0.25);
-    }
-    100% {
-        transform: scaleY(1.0);
-    }
-`;
+const winkEye = keyframes({
+    "0%": {transform: scaleY(1)},
+    [percent(50)]: {transform: scaleY(0.25)},
+    [percent(85)]: {transform: scaleY(0.25)},
+    [percent(100)]: {transform: scaleY(1)},
+});
 
-const winkFace = keyframes`
-    0% {
-        transform: rotate(0);
-    }
-    33% {
-        transform: rotate(5deg);
-    }
-    50% {
-        transform: rotate(5deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
-`;
+const winkFace = keyframes({
+    "0%": {transform: rotate(0)},
+    [percent(33)]: {transform: rotate(deg(5))},
+    [percent(50)]: {transform: rotate(deg(5))},
+    [percent(100)]: {transform: rotate(0)},
+});
 
 const styles = {
     head: css({
-        transformOrigin: [percent(42), percent(50), 0].join(" "),
+        transformOrigin: [percent(42), percent(50), 0],
         "&:hover": {
-            animation: [winkFace, "0.75s"].join(" "),
+            animation: [winkFace, s(0.75)],
             "#right-eye": {
-                animation: [winkEye, "0.5s"].join(" "),
+                animation: [winkEye, s(0.5)],
             },
         },
     }),
     hairs: css({
-        animation: [hairs, "15s", "ease", "0s", "infinite"].join(" "),
+        animation: [hairs, s(15), "ease", "0s", "infinite"],
         animationPlayState: "running",
     }),
     rightEye: css({
-        transformOrigin: [percent(50), percent(55), 0].join(" "),
+        transformOrigin: [percent(50), percent(55), 0],
     }),
 };
 

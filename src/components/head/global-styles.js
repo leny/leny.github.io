@@ -7,8 +7,10 @@
  */
 
 import React from "react";
-import {css, Global} from "@emotion/core";
-import {percent} from "koutla-swiss";
+import {Global} from "@emotion/core";
+import {css} from "@pwops/emotion-css";
+import {percent} from "@pwops/core";
+import "@pwops/mixins";
 
 import normalize from "emotion-normalize";
 import boxSizingReset from "emotion-box-sizing-reset";
@@ -38,7 +40,7 @@ export default () => (
                         "normal",
                         `${percent(62.5)}/1.5`,
                         SOURCE_SANS_PRO_STACK,
-                    ].join(" "),
+                    ],
                 },
                 body: {
                     position: "relative",
@@ -47,7 +49,7 @@ export default () => (
                 a: {
                     color: ALT_COLOR,
                     textDecoration: "none",
-                    transition: ["color", ".25s", "ease-in-out"].join(" "),
+                    transition: ["color", ".25s", "ease-in-out"],
                     "&:hover": {color: ALT_HOVER_COLOR},
                 },
             })}

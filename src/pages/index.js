@@ -8,8 +8,9 @@
 
 import React from "react";
 import {graphql} from "gatsby";
-import {css} from "@emotion/core";
-import {flexrow, vh, rem, percent, mq, margin} from "koutla-swiss";
+import {css} from "@pwops/emotion-css";
+import {mq} from "../core/utils";
+import {vh, rem, percent} from "@pwops/core";
 
 import {MQ_TABLET} from "../core/constants";
 
@@ -26,12 +27,11 @@ import Footer from "../components/footer/footer";
 const styles = {
     wrapper: css({
         position: "relative",
-        ...flexrow("center", "center"),
+        flexRow: ["center", "center"],
         minHeight: vh(100),
         zIndex: 100,
         transform: "translateZ(0)",
         transformOrigin: "preserve-3d",
-        ...mq(MQ_TABLET, {}),
     }),
     main: css({
         width: percent(90),
@@ -54,17 +54,17 @@ const styles = {
     }),
     presentation: css({
         ...mq(MQ_TABLET, {
-            ...margin(rem(11.75), 0, rem(2.4), rem(25)),
+            margin: [rem(11.75), 0, rem(2.4), rem(25)],
         }),
     }),
     content: css({
         ...mq(MQ_TABLET, {
-            ...margin(0, 0, rem(2.4), rem(25)),
+            margin: [0, 0, rem(2.4), rem(25)],
         }),
     }),
     footer: css({
         ...mq(MQ_TABLET, {
-            ...margin(0, 0, 0, rem(25)),
+            margin: [0, 0, 0, rem(25)],
         }),
     }),
 };

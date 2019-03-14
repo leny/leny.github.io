@@ -8,19 +8,19 @@
 
 import React from "react";
 import {StaticQuery, graphql} from "gatsby";
-import {css} from "@emotion/core";
-import {rem, size, flexrow, important} from "koutla-swiss";
+import {css} from "@pwops/emotion-css";
+import {rem} from "@pwops/core";
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const styles = {
     container: css({
-        ...flexrow("space-between", "center"),
+        flexRow: ["space-between", "center"],
     }),
     title: css({display: "none"}),
     icon: css({
         display: "inline-block",
-        ...size(important(rem(2.4))),
+        size: [`${rem(2.4)} !important`],
     }),
 };
 

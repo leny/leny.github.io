@@ -7,8 +7,9 @@
  */
 
 import React from "react";
-import {css} from "@emotion/core";
-import {rem, margin, size, mq, flexcolumn} from "koutla-swiss";
+import {css} from "@pwops/emotion-css";
+import {mq} from "../../core/utils";
+import {rem} from "@pwops/core";
 
 import {MQ_TABLET} from "../../core/constants";
 
@@ -17,25 +18,25 @@ import Name from "../svg/leny.me";
 
 const styles = {
     container: css({
-        ...margin(0),
+        margin: [0],
     }),
     title: css({
-        ...margin(0, 0, rem(2)),
-        ...flexcolumn("flex-start", "center"),
+        margin: [0, 0, rem(2)],
+        flexColumn: ["flex-start", "center"],
     }),
     svg: css({
         display: "block",
-        ...margin(0),
+        margin: [0],
     }),
     leny: css({
-        ...size(rem(7.2)),
+        size: [rem(7.2)],
         flex: "none",
         ...mq(MQ_TABLET, {
-            ...size(rem(9.6)),
+            size: [rem(9.6)],
         }),
     }),
     name: css({
-        ...size(rem(24), rem(6.4)),
+        size: [rem(24), rem(6.4)],
         ...mq(MQ_TABLET, {
             height: rem(8.2),
         }),

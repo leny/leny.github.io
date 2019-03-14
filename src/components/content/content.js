@@ -7,23 +7,23 @@
  */
 
 import React from "react";
-import {css} from "@emotion/core";
-import {rem, margin, padding, borderBottom, borderTop} from "koutla-swiss";
+import {css} from "@pwops/emotion-css";
+import {rem} from "@pwops/core";
 
 import {BORDER_COLOR} from "../../core/constants";
 
 const styles = {
     container: css({
-        ...margin(0, 0, rem(2.4)),
-        ...padding(rem(0.8), 0),
-        ...borderTop(rem(0.1), "solid", BORDER_COLOR),
-        ...borderBottom(rem(0.1), "solid", BORDER_COLOR),
+        margin: [0, 0, rem(2.4)],
+        padding: [rem(0.8), 0],
+        borderTop: [rem(0.1), "solid", BORDER_COLOR],
+        borderBottom: [rem(0.1), "solid", BORDER_COLOR],
     }),
     title: css({
         display: "none",
     }),
     description: css({
-        ...margin(0),
+        margin: [0],
         fontSize: rem(2),
         textAlign: "center",
     }),

@@ -8,14 +8,15 @@
 
 import React from "react";
 import {StaticQuery, graphql} from "gatsby";
-import {css} from "@emotion/core";
-import {rem, margin, mq} from "koutla-swiss";
+import {css} from "@pwops/emotion-css";
+import {mq} from "../../core/utils";
+import {rem} from "@pwops/core";
 
 import {MQ_TABLET} from "../../core/constants";
 
 const styles = {
     container: css({
-        ...margin(0, 0, rem(1.6)),
+        margin: [0, 0, rem(1.6)],
         fontSize: rem(1.6),
     }),
     title: css({
