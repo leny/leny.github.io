@@ -9,19 +9,14 @@
 import React from "react";
 import {StaticQuery, graphql} from "gatsby";
 import {css} from "@pwops/emotion-css";
-import {rem} from "@pwops/core";
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Link from "./link";
 
 const styles = {
     container: css({
         flexRow: ["space-between", "center"],
     }),
     title: css({display: "none"}),
-    icon: css({
-        display: "inline-block",
-        size: [`${rem(2.4)} !important`],
-    }),
 };
 
 export default ({className}) => (
@@ -39,16 +34,9 @@ export default ({className}) => (
         `}
         render={data => (
             <footer css={styles.container} className={className}>
-                <h2 css={styles.title}>
-                    {"Retrouvez-moi un peu partout sur le web"}
-                </h2>
+                <h2 css={styles.title}>{"Find me at these places:"}</h2>
                 {data.dataJson.links.map(({url, icon, title}) => (
-                    <a key={title} href={url} rel={"external"} title={title}>
-                        <FontAwesomeIcon
-                            css={styles.icon}
-                            icon={icon.split("_")}
-                        />
-                    </a>
+                    <Link key={url} title={title} url={url} icon={icon} />
                 ))}
             </footer>
         )}
