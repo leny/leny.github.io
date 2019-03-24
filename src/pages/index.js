@@ -96,7 +96,10 @@ export const query = graphql`
 
 export default ({data}) => (
     <div css={styles.wrapper}>
-        <Helmet>
+        <Helmet
+            htmlAttributes={{
+                lang: "en",
+            }}>
             <title>{"leny.me - Pierre-Antoine Delnatte"}</title>
         </Helmet>
         <GlobalStyles />

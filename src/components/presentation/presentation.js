@@ -11,8 +11,11 @@ import {StaticQuery, graphql} from "gatsby";
 import {css} from "@pwops/emotion-css";
 import {mq} from "../../core/utils";
 import {rem} from "@pwops/core";
+import md from "markdown-it";
 
 import {MQ_TABLET} from "../../core/constants";
+
+const parser = md();
 
 const styles = {
     container: css({
@@ -20,7 +23,6 @@ const styles = {
         fontSize: rem(1.6),
     }),
     title: css({
-        display: "block",
         marginBottom: rem(0.25),
         fontSize: rem(1.8),
         ...mq(MQ_TABLET, {fontSize: rem(1.6)}),
@@ -38,10 +40,19 @@ export default ({className}) => (
             }
         `}
         render={data => (
-            <p css={styles.container} className={className}>
-                <strong css={styles.title}>{data.dataJson.title}</strong>
-                <span>{data.dataJson.description}</span>
-            </p>
+            <section css={styles.container} className={className}>
+                <p css={styles.title}>
+                    <strong>{data.dataJson.title}</strong>
+                </p>
+                {data.dataJson.description.map(content => (
+                    <p
+                        key={content}
+                        dangerouslySetInnerHTML={{
+                            __html: parser.renderInline(content),
+                        }}
+                    />
+                ))}
+            </section>
         )}
     />
 );

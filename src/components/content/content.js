@@ -31,10 +31,10 @@ const styles = {
 
 export default ({className}) => (
     <section css={styles.container} className={className}>
-        <h2 css={styles.title}>{"En savoir plus sur moi…"}</h2>
+        <h2 css={styles.title}>{"More about me..."}</h2>
         <p css={styles.description}>
             <a href={"//pierre-antoine.delnatte.be"} rel={"external"}>
-                {"Consulter mon CV"}
+                {"Check my resume"}
             </a>
         </p>
     </section>
