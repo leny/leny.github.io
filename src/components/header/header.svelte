@@ -10,6 +10,13 @@
         margin: 0;
     }
 
+    @media (min-width: 640px) {
+        header {
+            width: 24rem;
+            float: "left";
+        }
+    }
+
     h1 {
         margin: 0 0 2rem;
         display: flex;

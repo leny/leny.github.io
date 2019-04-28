@@ -1,6 +1,7 @@
 <div class="wrapper">
     <main>
         <Header />
+        <Presentation />
     </main>
 </div>
 
@@ -38,4 +39,5 @@
 
 <script>
     import Header from "./components/header/header.svelte";
+    import Presentation from "./components/presentation/presentation.svelte";
 </script>

@@ -13,6 +13,7 @@
         width: 24rem;
         height: 6.4rem;
     }
+
     @media (min-width: 640px) {
         svg {
             height: 8.2rem;
