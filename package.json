@@ -1,0 +1,64 @@
+{
+  "name": "@leny/leny.github.io",
+  "version": "0.0.1",
+  "private": true,
+  "description": "My homepage",
+  "scripts": {
+    "lint:js": "npx eslint --fix --cache src",
+    "lint:svelte": "npx prettier --write src/**/*.svelte",
+    "lint": "run-p lint:js lint:svelte",
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w",
+    "serve:dev": "sirv public --dev",
+    "work": "run-p serve:dev build:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leny/leny.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leny/leny.github.io/issues"
+  },
+  "homepage": "https://leny.github.io",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@becode/eslint-config": "^0.4.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-unicorn": "^8.0.2",
+    "husky": "^2.1.0",
+    "lint-staged": "^8.1.5",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.17.0",
+    "prettier-plugin-svelte": "^0.3.0",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "sirv-cli": "^0.4.0",
+    "svelte": "^3.1.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npx eslint --fix --cache",
+      "git add"
+    ],
+    "*.svelte": [
+      "npx prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  }
+}
