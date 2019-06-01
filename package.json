@@ -26,7 +26,7 @@
     "@pwops/emotion-css": "0.0.4",
     "@pwops/mixins": "0.0.2",
     "color": "^3.1.0",
-    "emotion-box-sizing-reset": "^0.1.0",
+    "emotion-box-sizing-reset": "^0.2.0",
     "emotion-normalize": "^10.0.0",
     "gatsby": "^2.1.23",
     "gatsby-plugin-emotion": "^4.0.7",
