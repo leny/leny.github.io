@@ -22,7 +22,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.7.2",
     "@fortawesome/pro-solid-svg-icons": "^5.7.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "@pwops/core": "0.0.2",
+    "@pwops/core": "0.1.4",
     "@pwops/emotion-css": "0.0.4",
     "@pwops/mixins": "0.0.2",
     "color": "^3.1.0",
