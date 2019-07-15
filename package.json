@@ -34,7 +34,7 @@
     "gatsby-source-filesystem": "^2.1.4",
     "gatsby-transformer-json": "^2.2.1",
     "luxon": "^1.17.1",
-    "markdown-it": "^9.0.0",
+    "markdown-it": "^9.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1"
