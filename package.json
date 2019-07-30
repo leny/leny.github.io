@@ -19,7 +19,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.14",
     "@fortawesome/fontawesome-svg-core": "^1.2.20",
-    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-brands-svg-icons": "^5.10.0",
     "@fortawesome/pro-solid-svg-icons": "^5.10.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@pwops/core": "0.1.4",
