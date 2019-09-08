@@ -1,0 +1,40 @@
+name: Build & deploy
+
+on:
+  push:
+    branches:
+      - gatsby
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Create npmrc file
+      run: |
+        "echo '' > .npmrc"
+        "echo '@fortawesome:registry=https://npm.fontawesome.com/' >> .npmrc"
+        "echo '//npm.fontawesome.com/:_authToken='${{ secrets.FONTAWESOME_TOKEN }} >> .npmrc"
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, fetch data and build
+      run: |
+        npm ci
+        npm run build
+      env:
+        CI: true
+    - name: deploy
+      uses: crazy-max/ghaction-github-pages@master
+      with:
+        target_branch: gh-pages
+        build_dir: public
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_PAT: ${{ secrets.GH_PAT }}
