@@ -17,9 +17,9 @@ jobs:
     - uses: actions/checkout@v1
     - name: Create npmrc file
       run: |
-        "echo '' > .npmrc"
-        "echo '@fortawesome:registry=https://npm.fontawesome.com/' >> .npmrc"
-        "echo '//npm.fontawesome.com/:_authToken='${{ secrets.FONTAWESOME_TOKEN }} >> .npmrc"
+        echo '' > .npmrc
+        echo '@fortawesome:registry=https://npm.fontawesome.com/' >> .npmrc
+        echo '//npm.fontawesome.com/:_authToken='${{ secrets.FONTAWESOME_TOKEN }} >> .npmrc
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
