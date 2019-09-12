@@ -28,6 +28,11 @@
             "icon": "fab_github-alt"
         },
         {
+            "url": "//dev.to/leny",
+            "title": "Dev.to",
+            "icon": "fab_dev"
+        },
+        {
             "url": "//medium.com/@leny_be",
             "title": "Medium",
             "icon": "fab_medium-m"
