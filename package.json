@@ -35,7 +35,7 @@
     "gatsby-transformer-json": "^2.2.15",
     "luxon": "^1.19.3",
     "markdown-it": "^10.0.0",
-    "react": "^16.10.2",
+    "react": "^16.11.0",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1"
   },
