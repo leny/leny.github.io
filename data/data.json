@@ -28,6 +28,11 @@
             "icon": "fab_github-alt"
         },
         {
+            "url": "//youtube.com/user/LenyMcCormick",
+            "title": "YouTube",
+            "icon": "fab_youtube"
+        },
+        {
             "url": "//dev.to/leny",
             "title": "Dev.to",
             "icon": "fab_dev"
