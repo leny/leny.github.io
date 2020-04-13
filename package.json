@@ -23,7 +23,7 @@
     "@fortawesome/react-fontawesome": "^0.1.8",
     "@pwops/core": "0.1.4",
     "@pwops/emotion-css": "0.2.0",
-    "@pwops/mixins": "0.1.4",
+    "@pwops/mixins": "0.2.0",
     "color": "^3.1.2",
     "emotion-box-sizing-reset": "^0.2.0",
     "emotion-normalize": "^10.1.0",
