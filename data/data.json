@@ -33,6 +33,11 @@
             "icon": "fab_youtube"
         },
         {
+            "url": "//twitch.tv/lenymccormick",
+            "title": "Twitch",
+            "icon": "fab_twitch"
+        },
+        {
             "url": "//dev.to/leny",
             "title": "Dev.to",
             "icon": "fab_dev"
