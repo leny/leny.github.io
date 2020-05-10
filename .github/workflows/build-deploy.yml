@@ -24,7 +24,7 @@ jobs:
         npm ci
         npm run build
     - name: deploy
-      uses: crazy-max/ghaction-github-pages@master
+      uses: crazy-max/ghaction-github-pages@v1
       with:
         target_branch: master
         build_dir: public
