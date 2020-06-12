@@ -27,7 +27,7 @@
     "color": "^3.1.2",
     "emotion-box-sizing-reset": "^0.2.0",
     "emotion-normalize": "^10.1.0",
-    "gatsby": "^2.20.22",
+    "gatsby": "^2.23.3",
     "gatsby-plugin-emotion": "^4.3.4",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-source-filesystem": "^2.3.8",
