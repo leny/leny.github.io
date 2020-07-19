@@ -101,6 +101,7 @@ export default ({data}) => (
                 lang: "en",
             }}>
             <title>{"leny.me - Pierre-Antoine Delnatte"}</title>
+            <meta httpEquiv={"X-Clacks-Overhead"} content={"GNU Terry Pratchett"} />
         </Helmet>
         <GlobalStyles />
         <ShareCard type={"twitter"} values={data.dataJson.cards.twitter} />
