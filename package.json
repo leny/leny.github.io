@@ -19,7 +19,7 @@
     "@emotion/core": "^10.0.35",
     "@fortawesome/fontawesome-svg-core": "^1.2.31",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/pro-solid-svg-icons": "^5.14.0",
+    "@fortawesome/pro-solid-svg-icons": "^5.15.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@pwops/core": "0.1.5",
     "@pwops/emotion-css": "0.2.0",
