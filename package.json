@@ -20,7 +20,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/pro-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@fortawesome/react-fontawesome": "^0.1.12",
     "@pwops/core": "0.1.5",
     "@pwops/emotion-css": "0.2.0",
     "@pwops/mixins": "0.2.0",
