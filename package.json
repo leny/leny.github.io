@@ -30,7 +30,7 @@
     "gatsby": "^2.31.1",
     "gatsby-plugin-emotion": "^4.5.0",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
-    "gatsby-source-filesystem": "^2.10.0",
+    "gatsby-source-filesystem": "^2.11.0",
     "gatsby-transformer-json": "^2.10.0",
     "luxon": "^1.25.0",
     "markdown-it": "^12.0.4",
