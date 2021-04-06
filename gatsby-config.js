@@ -20,7 +20,7 @@ module.exports = {
             resolve: `gatsby-plugin-emotion`,
         },
         {
-            resolve: `gatsby-plugin-prefetch-google-fonts`,
+            resolve: `@el7cosmos/gatsby-plugin-prefetch-google-fonts`,
             options: {
                 fonts: [
                     {
