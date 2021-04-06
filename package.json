@@ -16,6 +16,7 @@
     ]
   },
   "dependencies": {
+    "@el7cosmos/gatsby-plugin-prefetch-google-fonts": "^2.0.3",
     "@emotion/core": "^10.1.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
@@ -29,7 +30,6 @@
     "emotion-normalize": "^10.1.0",
     "gatsby": "^2.32.11",
     "gatsby-plugin-emotion": "^4.5.0",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-transformer-json": "^2.11.0",
     "luxon": "^1.26.0",
