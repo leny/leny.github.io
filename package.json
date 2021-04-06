@@ -19,7 +19,7 @@
     "@el7cosmos/gatsby-plugin-prefetch-google-fonts": "^2.0.3",
     "@emotion/core": "^10.1.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/pro-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@pwops/core": "0.1.5",
