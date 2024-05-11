@@ -33,11 +33,6 @@
             "icon": "fab_youtube"
         },
         {
-            "url": "//twitch.tv/lenymccormick",
-            "title": "Twitch",
-            "icon": "fab_twitch"
-        },
-        {
             "url": "//dev.to/leny",
             "title": "Dev.to",
             "icon": "fab_dev"
@@ -46,11 +41,6 @@
             "url": "//medium.com/@leny_be",
             "title": "Medium",
             "icon": "fab_medium-m"
-        },
-        {
-            "url": "//twitter.com/leny_be",
-            "title": "Twitter",
-            "icon": "fab_twitter"
         },
         {"url": "//www.npmjs.com/~leny", "title": "npm", "icon": "fab_npm"},
         {
