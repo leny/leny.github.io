@@ -1,5 +1,5 @@
 {
-    "title": "I'm Leny, 39, full-stack webdeveloper.",
+    "title": "I'm Leny, 40, full-stack webdeveloper.",
     "description": [
         "Currently working as _Lead Webdeveloper & Sysadmin_ at [Mango3D](https://mango3d.io) (in Belgium), taking part in the 3D printing revolution.",
         "Passionate about solving problems and [sharing code](https://github.com/leny) with the community."
@@ -7,7 +7,7 @@
     "cards": {
         "twitter": {
             "card": "summary",
-            "title": "leny.me - Pierre-Antoine 'Leny' Delnatte, 37, full-stack webdeveloper.",
+            "title": "leny.me - Pierre-Antoine 'Leny' Delnatte, 40, full-stack webdeveloper.",
             "description": "Currently working as Lead Webdeveloper & Sysadmin at Mango3D in Liège, Belgium, taking part in the 3D printing revolution.",
             "image": "https://leny.me/me.jpg",
             "creator": "@leny_be"
@@ -15,7 +15,7 @@
         "facebook": {
             "type": "profile",
             "site_name": "leny.me",
-            "title": "leny.me - Pierre-Antoine 'Leny' Delnatte, 37, full-stack webdeveloper.",
+            "title": "leny.me - Pierre-Antoine 'Leny' Delnatte, 40, full-stack webdeveloper.",
             "description": "Currently working as Lead Webdeveloper & Sysadmin at Mango3D in Liège, Belgium, taking part in the 3D printing revolution.",
             "image": "https://leny.me/me.jpg",
             "locale": "en_GB"
